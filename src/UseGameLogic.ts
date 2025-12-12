@@ -80,6 +80,7 @@ export function useGameLogic() {
     setStarted(true);
     setLost(false);
     setScore(0);
+    setCombo(1);
     setPlayerTurn(false);
   }, []);
 
@@ -112,8 +113,9 @@ export function useGameLogic() {
         const feedback = getFeedback(time.current, firstNote.current,gameInterval.current);
 
         if (feedback.multi !== 0) {
-            if(feedback.multi==GAME_CONFIG.PEFECT_HIT_MULTI){
-                setCombo((prev) => prev+0.1);
+            if(feedback.multi===GAME_CONFIG.PEFECT_HIT_MULTI){
+              console.log("lul");
+                setCombo((prev) => prev+0.05);
             }else {
                 setCombo(1);
             }
