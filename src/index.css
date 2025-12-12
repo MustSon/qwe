@@ -1,0 +1,140 @@
+.bitcount-grid-single-myheader {
+  font-family: "Bitcount Grid Single", system-ui;
+  font-weight: 600;
+  font-size: 77px;
+  color: red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 10vh;
+}
+
+.myheader-font {
+  font-family: "Bitcount Grid Single", system-ui;
+  font-weight: 600;
+  font-size: 77px;
+  color: red;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.titleFont {
+  margin-top: 80px;
+  height: 41vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 50px;
+  height: 40vh;
+  margin-top: 5vh;
+}
+
+.startButton,
+.restartButton,
+.scoreSaveButton,
+.highScoreButton {
+  width: 200px;
+  height: 100px;
+
+  background-color: green;
+  color: black;
+
+  font-size: 20px;
+  font-weight: bold;
+
+  border: 10px solid black;
+  border-radius: 100px;
+
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.startButton:hover,
+.restartButton:hover,
+.scoreSaveButton:hover,
+.highScoreButton:hover {
+  background-color: darkblue;
+}
+
+
+.squareContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 150px;
+  height: 10vh;
+}
+
+.imageGrid {
+  position: relative;
+  top: -30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.score {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.afterGame {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  gap: 20px;
+
+  color: red;
+
+  margin-top: 30vh; 
+}
+
+
+.arrowContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 40px;
+  width: 100%;
+  text-align: center;
+
+  margin-top: -5vh; 
+}
+
+.arrowContainer-endgame {
+  margin-top: 12vh;
+}
