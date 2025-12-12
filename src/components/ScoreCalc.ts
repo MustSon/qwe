@@ -2,7 +2,6 @@ export function getFeedback(duration: number, firstPlayInSequence: boolean, game
   let text: string = '';
   let multi: number = 1;
   let color: string = '#ff4500'; 
-  let keepCombo: boolean = false;
 
   if ((duration >= gameInterval-35 && duration <= gameInterval+35)) {
     text = 'PERFECT!';
